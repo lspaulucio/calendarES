@@ -1,4 +1,5 @@
 import re
+import uuid
 from bs4 import BeautifulSoup
 from enum import Enum
 from icalendar import Event, Calendar
@@ -41,7 +42,7 @@ def createCalendar(name, description):
     cal = Calendar()
 
     # Some properties are required to be compliant
-    cal.add('PRODID', '-//Feriados Espirito Santo//lspaulucio//')
+    cal.add('PRODID', '-//Feriados Espirito Santo//lspaulucio//BR')
     cal.add('VERSION', '2.0')
     cal.add('CALSCALE', 'GREGORIAN')
     cal.add('METHOD', 'PUBLISH')
@@ -58,6 +59,8 @@ def createCalendarEvent(eventInfo):
     event.add('CLASS', 'PUBLIC')
     event.add('STATUS', 'CONFIRMED')
     event.add('TRANSP', 'TRANSPARENT')
+    event.add('UID', f'{uuid.uuid4()}@calendares')
+    event.add('DTSTAMP', datetime.now())
 
     event.add('NAME', eventInfo['description'])
     event.add('SUMMARY', eventInfo['description'])
