@@ -10,6 +10,7 @@ BEGIN:VEVENT
 SUMMARY:Confraternização Universal (feriado nacional)
 DTSTART;VALUE=DATE:20250101
 DTEND;VALUE=DATE:20250102
+UID:426e2185-76d5-459b-be07-8a0c97ce7fd4@calendares
 CLASS:PUBLIC
 DESCRIPTION:Confraternização Universal (feriado nacional)
 NAME:Confraternização Universal (feriado nacional)
@@ -20,6 +21,7 @@ BEGIN:VEVENT
 SUMMARY:Carnaval (ponto facultativo)
 DTSTART;VALUE=DATE:20250303
 DTEND;VALUE=DATE:20250304
+UID:8280c39c-9a7e-4f99-b71b-0841db4429c3@calendares
 CLASS:PUBLIC
 DESCRIPTION:Carnaval (ponto facultativo)
 NAME:Carnaval (ponto facultativo)
@@ -30,6 +32,7 @@ BEGIN:VEVENT
 SUMMARY:Carnaval (ponto facultativo)
 DTSTART;VALUE=DATE:20250304
 DTEND;VALUE=DATE:20250305
+UID:987db748-afa6-4959-8531-331c00a18ccf@calendares
 CLASS:PUBLIC
 DESCRIPTION:Carnaval (ponto facultativo)
 NAME:Carnaval (ponto facultativo)
@@ -40,6 +43,7 @@ BEGIN:VEVENT
 SUMMARY:Quarta-feira de Cinzas (ponto facultativo)
 DTSTART;VALUE=DATE:20250305
 DTEND;VALUE=DATE:20250306
+UID:a0d0de38-6487-4169-9871-682e1c6783e4@calendares
 CLASS:PUBLIC
 DESCRIPTION:Quarta-feira de Cinzas (ponto facultativo)
 NAME:Quarta-feira de Cinzas (ponto facultativo)
@@ -50,6 +54,7 @@ BEGIN:VEVENT
 SUMMARY:Paixão de Cristo (feriado nacional)
 DTSTART;VALUE=DATE:20250418
 DTEND;VALUE=DATE:20250419
+UID:371761e2-a234-4f70-9b86-176e2e2ae396@calendares
 CLASS:PUBLIC
 DESCRIPTION:Paixão de Cristo (feriado nacional)
 NAME:Paixão de Cristo (feriado nacional)
@@ -60,6 +65,7 @@ BEGIN:VEVENT
 SUMMARY:Tiradentes (feriado nacional)
 DTSTART;VALUE=DATE:20250421
 DTEND;VALUE=DATE:20250422
+UID:0cd07cf8-a656-4b7e-bf5a-44fafea5b762@calendares
 CLASS:PUBLIC
 DESCRIPTION:Tiradentes (feriado nacional)
 NAME:Tiradentes (feriado nacional)
@@ -70,6 +76,7 @@ BEGIN:VEVENT
 SUMMARY:Nossa Senhora da Penha (feriado estadual)
 DTSTART;VALUE=DATE:20250428
 DTEND;VALUE=DATE:20250429
+UID:f0c474cc-b89a-4b87-bac2-5d9ec705487d@calendares
 CLASS:PUBLIC
 DESCRIPTION:Nossa Senhora da Penha (feriado estadual)
 NAME:Nossa Senhora da Penha (feriado estadual)
@@ -80,6 +87,7 @@ BEGIN:VEVENT
 SUMMARY:Dia do Trabalho (feriado nacional)
 DTSTART;VALUE=DATE:20250501
 DTEND;VALUE=DATE:20250502
+UID:47ddfe6a-2911-43c0-b55f-c5a9317c8571@calendares
 CLASS:PUBLIC
 DESCRIPTION:Dia do Trabalho (feriado nacional)
 NAME:Dia do Trabalho (feriado nacional)
@@ -90,6 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Colonização do Solo Espírito-santense (ponto facultativo)
 DTSTART;VALUE=DATE:20250523
 DTEND;VALUE=DATE:20250524
+UID:89e99af0-7831-4a0d-8cee-8c7bc30717a6@calendares
 CLASS:PUBLIC
 DESCRIPTION:Colonização do Solo Espírito-santense (ponto facultativo)
 NAME:Colonização do Solo Espírito-santense (ponto facultativo)
@@ -100,6 +109,7 @@ BEGIN:VEVENT
 SUMMARY:Corpus Christi (ponto facultativo)
 DTSTART;VALUE=DATE:20250619
 DTEND;VALUE=DATE:20250620
+UID:f1cc7cf4-eeb9-41ad-8833-89bf1a81928b@calendares
 CLASS:PUBLIC
 DESCRIPTION:Corpus Christi (ponto facultativo)
 NAME:Corpus Christi (ponto facultativo)
@@ -110,6 +120,7 @@ BEGIN:VEVENT
 SUMMARY:(ponto facultativo)
 DTSTART;VALUE=DATE:20250620
 DTEND;VALUE=DATE:20250621
+UID:ce1ad229-f281-4607-b022-79c31120adf2@calendares
 CLASS:PUBLIC
 DESCRIPTION:(ponto facultativo)
 NAME:(ponto facultativo)
@@ -120,6 +131,7 @@ BEGIN:VEVENT
 SUMMARY:Independência do Brasil (feriado nacional)
 DTSTART;VALUE=DATE:20250907
 DTEND;VALUE=DATE:20250908
+UID:002753aa-b0be-41f5-bd6a-21ec5361a40e@calendares
 CLASS:PUBLIC
 DESCRIPTION:Independência do Brasil (feriado nacional)
 NAME:Independência do Brasil (feriado nacional)
@@ -131,6 +143,7 @@ SUMMARY:Nossa Senhora da Vitória / Aniversário de Vitória (feriado nos
  Municípios em que a data é considerada feriado Municipal)
 DTSTART;VALUE=DATE:20250908
 DTEND;VALUE=DATE:20250909
+UID:6ce0b187-9bf9-4c52-a9d6-861a6be47ec2@calendares
 CLASS:PUBLIC
 DESCRIPTION:Nossa Senhora da Vitória / Aniversário de Vitória (feriado 
  nos Municípios em que a data é considerada feriado Municipal)
@@ -143,6 +156,7 @@ BEGIN:VEVENT
 SUMMARY:Nossa Senhora Aparecida (feriado nacional)
 DTSTART;VALUE=DATE:20251012
 DTEND;VALUE=DATE:20251013
+UID:8b6e4524-ec45-4a57-aca5-d7d28127faea@calendares
 CLASS:PUBLIC
 DESCRIPTION:Nossa Senhora Aparecida (feriado nacional)
 NAME:Nossa Senhora Aparecida (feriado nacional)
@@ -153,6 +167,7 @@ BEGIN:VEVENT
 SUMMARY:comemoração antecipada do Dia do Servidor Público
 DTSTART;VALUE=DATE:20251027
 DTEND;VALUE=DATE:20251028
+UID:d0b6c8d1-0f3b-45d8-ac7a-5cc230704e33@calendares
 CLASS:PUBLIC
 DESCRIPTION:comemoração antecipada do Dia do Servidor Público
 NAME:comemoração antecipada do Dia do Servidor Público
@@ -163,6 +178,7 @@ BEGIN:VEVENT
 SUMMARY:Finados (feriado nacional)
 DTSTART;VALUE=DATE:20251102
 DTEND;VALUE=DATE:20251103
+UID:f0cbdf44-bb18-4b8f-a1d4-96380c8e50af@calendares
 CLASS:PUBLIC
 DESCRIPTION:Finados (feriado nacional)
 NAME:Finados (feriado nacional)
@@ -173,6 +189,7 @@ BEGIN:VEVENT
 SUMMARY:Proclamação da República (feriado nacional)
 DTSTART;VALUE=DATE:20251115
 DTEND;VALUE=DATE:20251116
+UID:8c4cf2f1-2a3b-4238-bfab-93aacdd6a275@calendares
 CLASS:PUBLIC
 DESCRIPTION:Proclamação da República (feriado nacional)
 NAME:Proclamação da República (feriado nacional)
@@ -183,6 +200,7 @@ BEGIN:VEVENT
 SUMMARY:Dia Nacional de Zumbi e da Consciência Negra (feriado nacional)
 DTSTART;VALUE=DATE:20251120
 DTEND;VALUE=DATE:20251121
+UID:43006d29-456b-4f33-97d8-57cd9404fe58@calendares
 CLASS:PUBLIC
 DESCRIPTION:Dia Nacional de Zumbi e da Consciência Negra (feriado naciona
  l)
@@ -194,6 +212,7 @@ BEGIN:VEVENT
 SUMMARY:(ponto facultativo)
 DTSTART;VALUE=DATE:20251224
 DTEND;VALUE=DATE:20251225
+UID:30786f17-d3b9-4424-8ac3-e3cdd3641190@calendares
 CLASS:PUBLIC
 DESCRIPTION:(ponto facultativo)
 NAME:(ponto facultativo)
@@ -204,6 +223,7 @@ BEGIN:VEVENT
 SUMMARY:Natal (feriado nacional)
 DTSTART;VALUE=DATE:20251225
 DTEND;VALUE=DATE:20251226
+UID:316fd9b7-e7b7-47f6-92c2-da0b21b456f0@calendares
 CLASS:PUBLIC
 DESCRIPTION:Natal (feriado nacional)
 NAME:Natal (feriado nacional)
@@ -214,6 +234,7 @@ BEGIN:VEVENT
 SUMMARY:(ponto facultativo)
 DTSTART;VALUE=DATE:20251231
 DTEND;VALUE=DATE:20260101
+UID:3854f63e-653b-4d85-b812-63505e00957d@calendares
 CLASS:PUBLIC
 DESCRIPTION:(ponto facultativo)
 NAME:(ponto facultativo)
