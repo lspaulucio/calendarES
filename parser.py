@@ -2,8 +2,7 @@ import re
 from bs4 import BeautifulSoup
 from enum import Enum
 from icalendar import Event, Calendar
-from datetime import datetime, timedelta
-import pytz
+from datetime import datetime, timedelta, date
 
 
 class HolidayType(Enum):
@@ -68,11 +67,10 @@ def createCalendarEvent(eventInfo):
     month = monthToNumber(eventInfo['month'])
     year = datetime.now().year
 
-    day_datetime = datetime(year, month, day, 0, 0, 0, tzinfo=pytz.utc)
-    next_datetime = day_datetime + timedelta(days=1)
+    event_date = date(year, month, day)
 
-    event.add('DTSTART', day_datetime)
-    event.add('DTEND', next_datetime)
+    event.add('DTSTART', event_date)
+    event.add('DTEND', event_date + timedelta(days=1))
 
     return event
 
