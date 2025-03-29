@@ -1,7 +1,9 @@
+import os
 import re
 import uuid
-from bs4 import BeautifulSoup
 from enum import Enum
+from pathlib import Path
+from bs4 import BeautifulSoup
 from icalendar import Event, Calendar
 from datetime import datetime, timedelta, date
 
@@ -13,7 +15,7 @@ class HolidayType(Enum):
     OPTIONAL_HOLIDAY = 4
 
 
-def monthToNumber(month):
+def month_to_number(month):
     months = {
         'janeiro': 1,
         'fevereiro': 2,
@@ -37,7 +39,7 @@ def monthToNumber(month):
         return -1
 
 
-def createCalendar(name, description):
+def create_calendar(name, description):
     # init the calendar
     cal = Calendar()
 
@@ -53,7 +55,7 @@ def createCalendar(name, description):
     return cal
 
 
-def createCalendarEvent(eventInfo):
+def create_calendar_event(eventInfo):
     event = Event()
     # Default parameters
     event.add('CLASS', 'PUBLIC')
@@ -67,7 +69,7 @@ def createCalendarEvent(eventInfo):
     event.add('DESCRIPTION', eventInfo['description'])
 
     day = eventInfo['day']
-    month = monthToNumber(eventInfo['month'])
+    month = month_to_number(eventInfo['month'])
     year = datetime.now().year
 
     event_date = date(year, month, day)
@@ -78,7 +80,7 @@ def createCalendarEvent(eventInfo):
     return event
 
 
-def processEntry(entry):
+def process_entry(entry):
     data = entry.split('.')[1]
 
     if ',' in data:
@@ -94,21 +96,25 @@ def processEntry(entry):
         if isinstance(description, list):
             description = " ".join(description)
 
-    day = parserDay(day)
+    day = parser_day(day)
 
     print(
-        f"Dia da Semana: {weekday}\t\tDescrição: {description}\tDia/Mes: {day}/{month}")
+        f"""
+        Dia da Semana: {weekday}\t\t
+        Descrição: {description}\t
+        Dia/Mes: {day}/{month}
+    """)
 
     return {'day': day, 'month': month, 'description': description}
 
 
-def parserDay(day_string):
+def parser_day(day_string):
     pattern = re.compile(r"[0-3]{0,1}[0-9]")
 
     return int(pattern.match(day_string).group())
 
 
-def parserContent(html_content):
+def parser_content(html_content):
 
     events = []
 
@@ -123,7 +129,26 @@ def parserContent(html_content):
         holiday = holiday.text
 
         # print(holiday)
-        holiday_info = processEntry(holiday)
-        events.append(createCalendarEvent(holiday_info))
+        holiday_info = process_entry(holiday)
+        events.append(create_calendar_event(holiday_info))
 
     return events
+
+
+def save_calendar(calendar, filename='calendarES.ics'):
+    directory = Path.cwd() / "CalendarES"
+    try:
+        directory.mkdir(parents=True, exist_ok=False)
+    except FileExistsError:
+        print("Folder already exists")
+    else:
+        print("Folder was created")
+
+    with open(os.path.join(directory, filename), 'wb') as f:
+        f.write(calendar.to_ical())
+
+
+def read_calendar(filepath):
+    with open(filepath, 'rb') as f:
+        calendar = Calendar.from_ical(f.read())
+    return calendar

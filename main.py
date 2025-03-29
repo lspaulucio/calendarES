@@ -1,28 +1,19 @@
-import os
-from pathlib import Path
+
 from datetime import datetime
 from urllib.request import urlopen
-from parser import parserContent, createCalendar
+from parser import parser_content, create_calendar, save_calendar
 
-url = f"https://der.es.gov.br/feriados-e-pontos-facultativos-{datetime.now().year}"
+year = datetime.now().year
+url = f"https://der.es.gov.br/feriados-e-pontos-facultativos-{year}"
 page = urlopen(url)
 html = page.read().decode("utf-8")
 
-calendar = createCalendar("Feriados Espírito Santo",
-                          "Calendário de Feriados do Espírito Santo")
-holidays_list = parserContent(html)
+calendar = create_calendar("Feriados Espírito Santo",
+                           "Calendário de Feriados do Espírito Santo")
+
+holidays_list = parser_content(html)
 
 for holiday in holidays_list:
     calendar.add_component(holiday)
 
-# Write to disk
-directory = Path.cwd() / 'CalendarES'
-try:
-    directory.mkdir(parents=True, exist_ok=False)
-except FileExistsError:
-    print("Folder already exists")
-else:
-    print("Folder was created")
-
-with open(os.path.join(directory, 'calendarES.ics'), 'wb') as f:
-    f.write(calendar.to_ical())
+save_calendar(calendar)
